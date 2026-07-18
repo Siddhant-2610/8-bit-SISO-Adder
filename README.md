@@ -6,6 +6,8 @@ This repository contains the full-custom, transistor-level physical implementati
 
 To maintain control over device geometry, active-area sharing, and parasitic routing penalties, automated standard-cell synthesis methodologies were intentionally bypassed. The project focuses on the complete Backend-of-Line (BEOL) workflow: schematic capture of fundamental logic primitives, custom standard cell layout utilizing Euler path optimization, top-level datapath integration, and Assura sign-off (DRC, LVS, PEX).
 
+📄 [View full datasheet (PDF)](./8-bit_SISO_Adder_datasheet.pdf)
+
 ## Key Architectural Features
 * **Full-Custom Transistor-Level Design:** Built entirely at the transistor level in 180nm technology, avoiding standard-cell abstraction for tighter control over timing and area.
 * **Dual SISO Input Registers:** Two independent 8-bit Serial-In-Serial-Out registers (IN1, IN2) shift in operands LSB-first over the first 8 clock cycles, avoiding the need for parallel-load infrastructure.
